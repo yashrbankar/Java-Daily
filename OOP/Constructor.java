@@ -1,9 +1,8 @@
-class Constructor
+public class Constructor
 {
     public static void main(String args[])
     {
-        Dog b=new Dog();
-        
+        Dog b=new Dog(0);
     }
 };
 
@@ -16,17 +15,18 @@ class animal
      }
      animal(int val)
      {
-          System.out.println("animal : default ");
+          System.out.println("animal parameter ");
      }
 };
 
-class Dog extends
+class Dog extends animal
 {
     String color;
-    Dog()
+    Dog(int x)
     {
+       super(x);
        System.out.println("dog default");
     }
-}
+};
 
 
